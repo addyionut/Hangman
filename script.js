@@ -35,7 +35,6 @@ const check = document.querySelector('.check');
 function checkLetter() {
 	document.getElementById("startNewGame").style.visibility = "visible";
 	document.getElementById("start").style.visibility = "hidden";
-	
 	var letterInserted = letterCheck.value.toLowerCase();
 	if (letterInserted.length === 1 || letterInserted.length === lg) {
 		if (letterInserted === wordToGuess) {
@@ -59,7 +58,6 @@ function checkLetter() {
 			if (letterCounter === 0) {
 				gameOver();
 			}
-			
 			document.getElementById("printWord").innerHTML = hiddenWord;
 			if (hiddenWord === wordToGuess) {
 				win();
@@ -80,7 +78,6 @@ function win() {
 	document.getElementById("lettersCounter").innerHTML = "";
 	insertField.disabled = true;
 	check.disabled = true;
-
 }
 
 function gameOver() {
