@@ -1,0 +1,45 @@
+body {
+	background-color: #FEF962;
+}
+.textAlign {
+	text-align: center;
+	margin: auto;
+}
+h1 {
+	margin: 40px;
+	color: green;
+	font-size: 60px;
+}
+.startGame input {
+	color: #353;
+  	text-align: center;
+	margin: 0;
+	padding-left: 10px;
+    padding: 20px 80px;
+    font-size: 20px;
+}
+.messages {
+	background-color: #abd5ea;
+	color: #333;
+  	font-size: 25px;
+	line-height: 30px;
+	margin: 0;
+	padding-left: 10px;
+}
+.fields {
+background-color: #abd5ea;
+	color: #333;
+  	font-size: 25px;
+	line-height: 30px;
+	margin: 0;
+	padding-left: 10px;
+}
+.fields input {
+	text-align: left;
+	font-size: 25px;
+}
+.printWord {
+	letter-spacing: 0.1em;
+	font-size: 40px;
+	text-align: center;
+}

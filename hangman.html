@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hangman</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="textAlign">
+			<h1>HANGMAN</h1> 
+			<div class="startGame">
+				<p>
+					<input type="submit" id="start" class="start" value="Start Game" onclick="start(), printWord(), this.style.visibility = 'hidden', startNewGame.style.visibility = 'visible'">
+				</p>
+				<p>	
+					<input type="submit" id="startNewGame" value="Start New Game" onclick="resetGame()" style = "visibility: hidden;">
+				</p>
+				
+				<div class="fields">
+					<div class="printWord">
+						<p id="printWord"></p>
+					</div>
+					<p id="letterInserted">
+						<input type="text" id="letterCheck" class="insertField" placeholder="Insert a letter or the word" onclick="value=''" style = "visibility: hidden;">
+					<p/>
+					<p id="checkLetter">
+						<input type="submit" value="Check" id="check" class="check" onclick="checkLetter()" style = "visibility: hidden;">
+					</p>
+					<div class="messages">
+						<p id="usedLetters"></p>
+						<p id="lettersCounter"></p>
+						<p id="win||gameOver"></p>
+						<p id="wordToGuess"></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
