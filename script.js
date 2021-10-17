@@ -1,6 +1,5 @@
 var hiddenWord = '';
 var letterCounter = 7;
-var wordToGuess = randomWord();
 var lg = wordToGuess.length;
 
 function randomWord() {
