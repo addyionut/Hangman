@@ -1,11 +1,11 @@
-var hiddenWord = '';
-var letterCounter = 7;
-var wordToGuess = randomWord();
-var lg = wordToGuess.length;
+let hiddenWord = '';
+let letterCounter = 7;
+let wordToGuess = randomWord();
+let lg = wordToGuess.length;
 
 function randomWord() {
-	var words = ["agreement", "antidisestablishmentarianism", "approach", "attention", "business", "challenge", "computer", "decision", "development", "example", "generation", "hard", "image", "incomprehensibilities", "issue", "letter", "message", "money", "network", "page", "phone", "professional", "relationship", "room", "small", "statement", "strategy", "successful", "technology", "tree", "window", "yes"];
- 	var randomWord =  Math.floor(Math.random() * words.length);
+	let words = ["agreement", "antidisestablishmentarianism", "approach", "attention", "business", "challenge", "computer", "decision", "development", "example", "generation", "hard", "image", "incomprehensibilities", "issue", "letter", "message", "money", "network", "page", "phone", "professional", "relationship", "room", "small", "statement", "strategy", "successful", "technology", "tree", "window", "yes"];
+ 	let randomWord =  Math.floor(Math.random() * words.length);
  	return words[randomWord];
 	}
 
